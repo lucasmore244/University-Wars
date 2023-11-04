@@ -65,6 +65,9 @@
             height: 50px;
             border-radius: 50%;
             background-color: #333;
+            background-image: url(images/person.jpeg);
+            background-size: cover;
+            background-position: center;
         }
 
         /* Right column content styles */
@@ -190,11 +193,13 @@ font-size: 20px;
         <div id="post-container">
             <!-- Example Initial Post 1 -->
             <div class="post">
-                <div class="profile-icon"></div>
+                <div class="profile-icon" style="background-image: url(images/jU5VMWjR_400x400.jpg);"></div>
                 <div class="right-column-content">
-                    <span class="handle">@username1 John Doe</span>
+                    <span class="handle">@EBthephyzman Eric B</span>
                     <div class="post-content">
-                        <p>This is an initial post. You can add text, images, and more here.</p>
+                        <p>The students arent spending 8 hours on my homework each week, then they deserve the 55 test average lol</p>
+                        <br>
+                        <img src="images/200w.gif">
                         <div class="like-button" onclick="toggleLike(this)">
                             <span class="heart unliked">♥</span>
                         </div>
@@ -204,11 +209,85 @@ font-size: 20px;
 
             <!-- Example Initial Post 2 -->
             <div class="post">
-                <div class="profile-icon"></div>
+                <div class="profile-icon" style="background-image: url(images/1670289697045.jpeg);"></div>
                 <div class="right-column-content">
-                    <span class="handle">@username2 Alice Smith</span>
+                    <span class="handle">@forresstpar FORRRRst P</span>
                     <div class="post-content">
-                        <p>This is another initial post.</p>
+                        <p>heres where im at...</p>
+                        <div class="like-button" onclick="toggleLike(this)">
+                            <span class="heart unliked">♥</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="profile-icon" style="background-image: url(images/newperson.jpeg);"></div>
+                <div class="right-column-content">
+                    <span class="handle">@alexprof Alex P</span>
+                    <div class="post-content">
+                        <p>yo i love you guys :3 </p>
+                        <div class="like-button" onclick="toggleLike(this)">
+                            <span class="heart unliked">♥</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="profile-icon" style="background-image: url(images/newperson.jpeg);"></div>
+                <div class="right-column-content">
+                    <span class="handle">@nickb Nick B</span>
+                    <div class="post-content">
+                        <p>why is this assignment so hard wtf 😄</p>
+                        <div class="like-button" onclick="toggleLike(this)">
+                            <span class="heart unliked">♥</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="profile-icon" style="background-image: url(images/newperson.jpeg);"></div>
+                <div class="right-column-content">
+                    <span class="handle">@lucianoGAMER Luc </span>
+                    <div class="post-content">
+                        <p>i game cause thats what i love</p>
+                        <div class="like-button" onclick="toggleLike(this)">
+                            <span class="heart unliked">♥</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="profile-icon" style="background-image: url(images/newperson.jpeg);"></div>
+                <div class="right-column-content">
+                    <span class="handle">@lucianoGAMER Luc </span>
+                    <div class="post-content">
+                        <p>i game cause thats what i love</p>
+                        <div class="like-button" onclick="toggleLike(this)">
+                            <span class="heart unliked">♥</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="profile-icon" style="background-image: url(images/unnamed.webp);"></div>
+                <div class="right-column-content">
+                    <span class="handle">@barstoolQU QU Barstool </span>
+                    <div class="post-content">
+                        <p>yo wtf is happening here lol</p> <br>
+                        <img src="images/01-cat-stretching-feet.gif.webp">
+                        <div class="like-button" onclick="toggleLike(this)">
+                            <span class="heart unliked">♥</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="profile-icon" style="background-image: url(images/unnamed.webp);"></div>
+                <div class="right-column-content">
+                    <span class="handle">@barstoolQU QU Barstool </span>
+                    <div class="post-content">
+                        <p>havin a party 2nite, see u all there 👀</p> <br>
+                        
                         <div class="like-button" onclick="toggleLike(this)">
                             <span class="heart unliked">♥</span>
                         </div>
@@ -263,7 +342,7 @@ font-size: 20px;
                 // Create a handle and add username and name
                 const handle = document.createElement("span");
                 handle.className = "handle";
-                handle.textContent = "@username John Doe";
+                handle.textContent = "@uniwars University Wars";
 
                 // Create post content
                 const postContentElement = document.createElement("div");
