@@ -3,9 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Your Twitter-Like Website</title>
+    <style>
+        /* Reset some default styles to make the layout consistent */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Basic styling for the layout */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: row;
+            background-color: #f0f0f0;
+        }
+
+        /* Sidebar styles */
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        /* Main content styles */
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        /* Right column styles */
+        .right-column {
+            width: 300px;
+            background-color: #ddd;
+            position: sticky;
+            top: 0;
+            padding: 20px;
+        }
+
+        /* Post container styles */
+        .post {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        /* Profile icon styles */
+        .profile-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #333;
+            float: left;
+            margin-right: 10px;
+        }
+
+        /* Handle and name styles */
+        .post-details {
+            overflow: hidden;
+        }
+
+        .handle {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        /* Post content styles */
+        .post-content {
+            margin-top: 10px;
+            clear: left;
+        }
+    </style>
 </head>
 <body>
-    <p>test</p>
+    <div class="sidebar">
+        <h1>Navigation</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Messages</a></li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </div>
+    <div class="main-content">
+        <!-- Individual Post Containers -->
+        <div class="post">
+            <div class="profile-icon"></div>
+            <div class="post-details">
+                <span class="handle">@username</span>
+                <span class="name">John Doe</span>
+            </div>
+            <div class="post-content">
+                <p>This is the content of the first post. You can add text, images, and more here.</p>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="profile-icon"></div>
+            <div class="post-details">
+                <span class="handle">@anotheruser</span>
+                <span class="name">Alice Smith</span>
+            </div>
+            <div class="post-content">
+                <p>This is the content of another post.</p>
+            </div>
+        </div>
+        <!-- Add more posts as needed -->
+    </div>
+    <div class="right-column">
+        <!-- Static components go here -->
+        <h2>Static Column</h2>
+        <p>These components will remain fixed even when scrolling the main content.</p>
+        <!-- Add more static components as needed -->
+    </div>
 </body>
 </html>
