@@ -47,7 +47,7 @@
             display: flex;
             background-color: #fff;
             border: 1px solid #ddd;
-            border-radius: 1rem;
+            border-radius: 5px;
             margin-bottom: 20px;
             padding: 10px;
         }
@@ -78,6 +78,8 @@
 
         /* Form styles */
         #post-form {
+            background-color: #fff;
+            border: 1px solid #ddd;
             border-radius: 5px;
             padding: 10px;
             margin-bottom: 20px;
@@ -142,7 +144,7 @@
                     <div class="post-content">
                         <p>This is an initial post. You can add text, images, and more here.</p>
                         <div class="like-button" onclick="toggleLike(this)">
-                            <span class="heart unliked">&#9825;</span>
+                            <span class="heart unliked">♥</span>
                         </div>
                     </div>
                 </div>
@@ -156,7 +158,7 @@
                     <div class="post-content">
                         <p>This is another initial post.</p>
                         <div class="like-button" onclick="toggleLike(this)">
-                            <span class="heart unliked">&#9825;</span>
+                            <span class="heart unliked">♥</span>
                         </div>
                     </div>
                 </div>
@@ -208,7 +210,7 @@
                 // Create a heart icon
                 const heart = document.createElement("span");
                 heart.className = "heart unliked";
-                heart.textContent = "\u2665"; // Heart symbol
+                heart.textContent = "♥"; // Heart symbol
 
                 // Append elements to the post container
                 likeButton.appendChild(heart);
@@ -233,10 +235,8 @@
             const heart = likeButton.querySelector(".heart");
             if (heart.classList.contains("unliked")) {
                 heart.classList.remove("unliked");
-                heart.classList.add("liked");
                 heart.style.color = "#ff0000"; // Red color for the filled heart
             } else {
-                heart.classList.remove("liked");
                 heart.classList.add("unliked");
                 heart.style.color = "#ddd"; // Default color for the outlined heart
             }
