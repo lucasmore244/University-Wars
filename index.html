@@ -4,7 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Twitter-Like Website</title>
-    <link rel="stylesheet" href="./stylesheet.css">
+    <style>
+        /* Reset some default styles to make the layout consistent */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Basic styling for the layout */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: row;
+            background-color: #f0f0f0;
+        }
+
+        /* Sidebar styles */
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        /* Main content styles */
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        /* Right column styles */
+        .right-column {
+            width: 300px;
+            background-color: #ddd;
+            position: sticky;
+            top: 0;
+            padding: 20px;
+        }
+
+        /* Post container styles */
+        .post {
+            display: flex;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        /* Profile icon styles */
+        .profile-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #333;
+        }
+
+        /* Right column content styles */
+        .right-column-content {
+            flex-grow: 1;
+            padding: 0 10px;
+        }
+
+        /* Handle and name styles */
+        .handle {
+            font-weight: bold;
+        }
+
+        /* Post content styles */
+        .post-content {
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="sidebar">
@@ -20,23 +91,23 @@
         <!-- Individual Post Containers -->
         <div class="post">
             <div class="profile-icon"></div>
-            <div class="post-details">
+            <div class="right-column-content">
                 <span class="handle">@username</span>
                 <span class="name">John Doe</span>
-            </div>
-            <div class="post-content">
-                <p>This is the content of the first post. You can add text, images, and more here.</p>
+                <div class="post-content">
+                    <p>This is the content of the post. You can add text, images, and more here.</p>
+                </div>
             </div>
         </div>
 
         <div class="post">
-            <div class "profile-icon"></div>
-            <div class="post-details">
+            <div class="profile-icon"></div>
+            <div class="right-column-content">
                 <span class="handle">@anotheruser</span>
                 <span class="name">Alice Smith</span>
-            </div>
-            <div class="post-content">
-                <p>This is the content of another post.</p>
+                <div class="post-content">
+                    <p>This is the content of another post.</p>
+                </div>
             </div>
         </div>
         <!-- Add more posts as needed -->
