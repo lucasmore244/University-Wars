@@ -1,0 +1,73 @@
+
+/* Reset some default styles to make the layout consistent */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the layout */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    background-color: #f0f0f0;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Main content styles */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Right column styles */
+.right-column {
+    width: 300px;
+    background-color: #ddd;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+}
+
+/* Post container styles */
+.post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* Profile icon styles */
+.profile-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333;
+    float: left;
+    margin-right: 10px;
+}
+
+/* Handle and name styles */
+.handle, .name {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.handle {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Post content styles */
+.post-content {
+    margin-top: 10px;
+    clear: left;
+}
